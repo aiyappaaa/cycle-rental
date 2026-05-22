@@ -7,21 +7,12 @@ const inter = Inter({
   display: 'swap',
 });
 
-export const metadata = {
-  title: 'RideFlow — Bike Rental Platform',
-  description: 'Rent a bike in minutes. Explore your city with RideFlow — the modern bike rental platform for riders and owners.',
-  keywords: ['bike rental', 'bicycle rental', 'city bikes', 'electric bikes', 'rideflow'],
-  authors: [{ name: 'RideFlow' }],
-  openGraph: {
-    title: 'RideFlow — Bike Rental Platform',
-    description: 'Rent a bike in minutes. Explore your city with RideFlow.',
-    type: 'website',
-  },
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <title>RideFlow</title>
+      </head>
       <body>{children}</body>
     </html>
   );
